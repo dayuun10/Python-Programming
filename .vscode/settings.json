@@ -2,5 +2,10 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter",
         "editor.formatOnSave": true
-    }
+    },
+    "code-runner.executorMap": {
+        "python": "python3 -u"
+    },
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000
 }
