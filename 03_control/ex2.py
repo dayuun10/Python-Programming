@@ -1,33 +1,64 @@
-#반복문: while문, for문
+# 반복문 : while문, for문
+
 
 # while문
-# 1 ~ 10까지의 반복 출력
+# 1~10까지의 반복 출력
+
 i = 1
+while i <= 10:
+    print(i)
+    i += 1
+else:
+    print("End")
+    
+    i = 1
 while i <= 10:
     print(i)
     i += 1
     if i == 6:
         break
 else:
-    print("end") # while문이 정상적으로 종료되면 실행됨, break문으로 종료되면 실행되지 않음
+    print("End") # 실행안됨
+    
 
 nums = [1, 3, 5, 7, 9]
 target = 2
 i = 0
-while i < len(nums):
+found = False
+
+while i <= 4:
     if nums[i] == target:
-        print(f"Found {target} at index {i}")
+        print(f"{target} found")
         break
     i += 1
-else:
-    print(f"{target} not found in the list") # => 훨씬 깔끔해짐
-
-
+else: # if not found
+    print(f"{target} not found")
+    
+    
 # 1 ~ 10까지의 합
-total = 0
-i = 1
+
+i = 0
+tot = 0
+
+# 1 ~ 10 짝수 합
+
 while i <= 10:
-    if i % 2 == 0:
-        total += i  
+    tot += i
+    i += 2
+else:
+    print(f"sum: {tot}")
+    
+while i <= 10:
+    if 1 % 2 == 0:
+        tot += i
     i += 1
-print(total)
+else:
+    print(f"sum: {tot}")
+    
+while i <= 10:
+    i += 1
+    if 1 % 2 == 1:
+        continue
+    tot += i
+else:
+    print(f"sum: {tot}")
