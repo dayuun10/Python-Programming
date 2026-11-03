@@ -8,7 +8,7 @@
 #
 #  [DB 사용 순서]
 #  - connect() : DB에 ( 연결 ), 데이터베이스 파일이 없으면 자동 생성
-#  - cursor()  : SQL을 실행하는 (  ) 객체 생성
+#  - cursor()  : SQL을 실행하는 ( 커서 ) 객체 생성
 #  - execute() : SQL을 ( 실행 )
 #  - commit()  : INSERT/UPDATE/DELETE 후 변경사항을 확정
 #  - close()   : 사용이 끝나면 연결 ( 종료 )

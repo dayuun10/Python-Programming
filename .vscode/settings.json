@@ -7,5 +7,5 @@
         "python": "python3 -u"
     },
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 1000
+    "files.autoSaveDelay": 10
 }
